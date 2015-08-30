@@ -37,31 +37,6 @@ module.exports = function() {
             }
         })
 
-        // var buttons = menuElement.querySelectorAll('[data-command]')
-        // Array.prototype.forEach.call(buttons, function(button) {
-        //     button.addEventListener('click', function() {
-        //         var command = scribe.getCommand(button.dataset.command)
-        //
-        //         var selection = new scribe.api.Selection()
-        //
-        //         scribe.el.focus()
-        //
-        //         command.execute({
-        //             image_url: 'http://7d9o0k.com1.z0.glb.clouddn.com/little_forest.jpg',
-        //             caption: '',
-        //             placeholder: '给图片写点文字'
-        //         }, function(figureElement) {
-        //             // focus on figcaption & hide menu
-        //             var newRange = document.createRange()
-        //             var figcaption = figureElement.querySelector('figcaption')
-        //             newRange.setStart(figcaption, 0)
-        //             newRange.setEnd(figcaption, 0)
-        //             selection.selection.removeAllRanges()
-        //             selection.selection.addRange(newRange)
-        //         })
-        //     })
-        // })
-
 
         function toggleMenu(e) {
             var selection = new scribe.api.Selection(),
