@@ -4,6 +4,8 @@
 
 ### Under construction...
 
+Demo (best with Chrome): http://daix.me/steno/
+
 - [x] Basic inline-style command
 - [x] Font icon
 - [x] Unlink command
