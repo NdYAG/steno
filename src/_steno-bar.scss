@@ -1,0 +1,89 @@
+@import "~sass-pattern/sass-pattern";
+// $background: #fff;
+// $foreground: #32AAD2;
+// $border: lightblue;
+$background: #2e963d;
+$foreground: #fff;
+$border: transparent;
+@mixin StenoBar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid $border;
+    border-radius: 3px;
+    color: $foreground;
+    position: absolute;
+    transform: translateZ(0);
+    user-select: none;
+    z-index: 99;
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+    }
+    &:before {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: $background;
+        z-index: 1;
+        border-radius: 3px;
+    }
+    &:after {
+        width: 8px;
+        height: 8px;
+        border: 1px solid $border;
+        z-index: 0;
+        background-color: $background;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+    > :first-child {
+        position: relative;
+        z-index: 2;
+        font-size: 0;
+        > * {
+            font-size: 1rem;
+        }
+    }
+    input[type="file"],
+    button {
+        @include Button {
+            border: 0;
+            background: transparent;
+            padding: 1em .75em;
+            color: $foreground;
+            line-height: 1;
+            // transition: all .2s;
+            // &:hover {
+            //     background: $foreground;
+            //     color: $background;
+            // }
+        };
+        &.is-active {
+            position: relative;
+            &:before {
+                content: "";
+                position: absolute;
+                width: 28px;
+                height: 28px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: rgba(#fff, .2);
+                border-radius: 2px;
+            }
+        }
+    }
+    opacity: 0;
+    transition: all .2s;
+    &.is-visible {
+        opacity: 1;
+    }
+    &.is-hidden {
+        display: none;
+    }
+}
+%StenoBar {
+    @include StenoBar;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Steno</title>
+        <link href="../fonts/fonticon.css" rel="stylesheet">
+        <link href="../dist/steno.css" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <header>
+                <input type="text" placeholder="标题" />
+            </header>
+            <div class="steno">
+                <article class="steno-workspace" contenteditable placeholder="内容"></article>
+                <ul class="steno-menu">
+                    <div class="steno-menu-wrapper">
+                        <!--<li><button data-command="figure" title="插入图片">P</button></li>-->
+                        <li class="steno-menu-image"><input type="file" data-command="figure" title="插入图片" id="stenoFileInput" /><span class="icon-image"></span></li>
+                    </div>
+                </ul>
+                <ul class="steno-toolbar">
+                    <div class="steno-toolbar-wrapper">
+                        <div class="steno-toolbar-buttons">
+                            <li><button data-command="bold" title="加粗"><span class="icon-bold"></span></button></li>
+                            <li><button data-command="italic" title="斜体"><span class="icon-italic"></span></button></li>
+                            <li><button data-command="createLink" title="链接"><span class="icon-link"></span></button></li>
+                        </div>
+                        <div class="steno-toolbar-link is-hidden">
+                            <input type="text" placeholder="插入链接……" />
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </main>
+    </body>
+    <script src="../dist/steno.built.js"></script>
+    <script type="text/html" id="template-article">
+        <p><b>那个NPC说：<a href="https://en.wikipedia.org/wiki/List_of_Cowboy_Bebop_characters" target="_blank">菲·瓦伦丁（Faye Valentine）</a>，这个名字是我起的，取自情人节（Valentine's Day），一年中我最喜欢的节日。</b></p>
+        <p></p>
+        <p>在民用宇宙飞船BEBOP号，有不加肉的青椒肉丝，有变异到可以跑还能蜇人的松坂牛肉，有龙宫的礼物，有奇妙的蘑菇，有聪明的小狗和四肢像面条的天才儿童……唯独没有情人节。</p>
+        <figure>
+            <img src="http://7d9o0k.com1.z0.glb.clouddn.com/bebop.jpg" height="416" />
+            <figcaption>Bebop</figcaption>
+        </figure>
+        <p>菲·瓦伦丁，当她以这个取自情人节的名字在BEBOP上生活，她很明白这个称呼其实并不属于自己。而当她终于找回了自己的记忆，却发现已经不知道自己属于哪里。</p>
+        <p></p>
+        <p>从02年算起，这已经是我第三次在这里写CB，并且也是第三次，忍不住首先就要提菲。角色的性格、背景、遭遇什么的，有一半是靠作品中直接透露，还有一半是靠观众或读者自己歪歪，所以有些时候，主题会被挖掘得比原作者想表达的还深；有些时候，我们喜欢的角色会被我们自己过度美化扭曲；有些时候，我们会在很久之后的回顾或者回想中，恍然大悟许多当初没发现的东西。</p>
+        <p></p>
+        <p>就比如说，其实只要以己度人地想一想就会发现，“菲·瓦伦丁”，这个她自己也明白只要向人报出口，就一定会被对方判定为“假名”的名字，却是那时的她拥有的唯一。</p>
+        <p></p>
+        <p>并且陷于这种困境的，显然不止她一个。</p>
+        <p></p>
+        <p>那个鸟窝头说：我的一只眼睛望向过去，一只眼睛望向未来。</p>
+        <p>否则为什么，辞职多年的杰特总记得自己做警察时的外号“黑狗”，否则为什么；库廉即使被背叛也依然如此执着于与比夏斯一起战斗的岁月；否则为什么，斯派克要用一只眼睛永远望向过去的时光。</p>
+        <p></p>
+        <p>在那时的没什么可以执着、又或者是假装无所执着的菲眼里，这些感情，是值得尊敬的坚持、无需了解的隐私，还是蠢男人们特有的顽固？00年初看CB的时候，在那时的或许还太年轻的我眼里，这些顽固有点难解。当时买的是三集一碟、碟片上写着《恶男杰特》的VCD，OP和ED被省略了不少，翻译勉强能看懂，预告也只有三分之一的内容。而在某段幸存的预告中，杰特用低沉而平静的声音如此描述那个关于咬住就不放的黑狗和黑狗从前的搭档的故事：“小孩子不要看，年轻人也不要看。……老头子一定要看。”</p>
+        <p></p>
+        <p>那是当时的我觉得相当沉闷所以经常跳过的一话，它被牛仔安迪、松坂牛肉、种满蘑菇的飞船、斯派克利落的拳脚和菲的录像带等等让人印象深刻的情节掩埋得分毫不露。而如今重看CB，某些被字幕扭曲了意义的日文或英文台词已经能自己听懂，当时浑然不觉的不少画面上的变形与瑕疵可以轻易地挑出来，至于杰特的故事，也终于看出了完全不同的味道：</p>
+        <p></p>
+        <p>无论是他的搭档还是他的前妻，关于杰特的那些出卖、背离之所以如此灰暗沉闷以及无趣，都是因为它们太写实，因为它们每天都可能发生在你我身边——区别或许只限于当事人的手中有没有枪，付出的是一只胳膊还是别的什么。从《ELM》起伏蹁跹的旋律中，从为老搭档点烟的怀旧与默契表象下，从停止了时间的怀表里，透出来的都是来自现实的疲惫与无奈。</p>
+        <p></p>
+        <p>如果说爱德和艾因属于童话，斯派克的存在就是段传奇，菲的经历像一部小说，那么杰特的故事，则只能归为纪实。因为它们太写实，所以当时的我没能理解——当然现在我也不敢说，自己如今就完全明白。</p>
+        <p></p>
+        <p>那个小女孩说：不论你现在在哪里，在做些什么，我都支持你。加油，我自己。</p>
+        <p>可以确定的是，从刚接触CB的2000年到现在，有些感情一直没变，比如喜欢山寺宏一，比如在斯派克死的时候有些感慨但毫不伤悲——他就是那样的男人选择了那样的路，所以一切理所当然地无可挽回，顺理成章地笔直通向楼梯上的一个踉跄和抬手一声“砰”；比如只要看见菲的那盘录像带，那些淤堵的汹涌的时光就会止不住地从眼睛里涌出来。</p>
+        <p></p>
+        <p>至于有所改变的，应该是不再妄想把自己喜欢的角色套进幻想中的崭新开始和从头来过，而是终于学会了静静注视和体会他们的困境，他们的顽固，还有他们的执着。那些不愉快的尴尬的惨痛的不堪回首的却又绝对不被允许忘记的往事，始终在这部被美国牛仔、中国功夫、风水算命、吴宇森式白鸽和爵士蓝调摇滚乐什么的装点得热闹又喧嚣的科幻片的最深处蠢蠢欲动，暗涌滔滔。</p>
+        <p></p>
+        <p>我想《COWBOY BEBOP》这样的片子之于我们，并不是劈在木材上的刀痕，能立竿见影地刻骨铭心，而是落进水里的颜料，越是沉淀和荡漾，才浸染越深。</p>
+        <p></p>
+        <p>所以在观看剧场版《天国之门》的时候，我没法与举着南瓜头的爱德分享节日气氛，不会有“他们又回来了”的再续前缘老友重聚之感，只能告诉自己，翻开旧相册的时候，总会掉出来一两张从前没发现的照片，只不过照片上的那些表情平淡一如往日的人们，当时还望不见未来——《天国之门》这段小插曲，像TV版中的许多话故事一样，又一次突出体现了人物性格，可对主线剧情而言却是一如既往的无关痛痒——渡边信一郎实在是太滑头，别说TV版完结之后的后传，他连前传都不肯让我们瞅一瞅。</p>
+        <p></p>
+        <p>而这样的抱怨，其实也只是小小的怨念：如果他愿意做前传续篇什么的，我们自然一定会去看，但原本TV版里片段透露的那些前尘往事已足够，后传更无所谓有没有——正如我们都明白，那个似乎是最没有什么可执着的菲、曾经拥有所有人之中最平凡最幸福过去的菲、在斯派克最后一次离开BEBOP前开了好几枪的菲，她从来就不是菲·瓦伦丁，却也只能是菲·瓦伦丁，因为之前和之后，我们都再无法设想——</p>
+        <p></p>
+        <p>毕竟故事与生活相比，最大的不同与最大的优点，都在于它终究会结束。</p>
+        <p></p>
+    </script>
+    <script>
+        document.querySelector('header input').value = 'Bebop没有情人节'
+        scribe.setContent(document.getElementById('template-article').innerHTML)
+    </script>
+</html>
