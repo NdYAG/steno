@@ -16,7 +16,7 @@
     "scribe": "0.0.9",
     "scribe-editor": "^2.0.0",
     "scribe-plugin-link-prompt-command": "^0.3.0",
-    "webpack": "^1.11.0"
+    "webpack": "^4.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^5.2.0",
