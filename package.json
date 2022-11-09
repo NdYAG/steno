@@ -12,7 +12,7 @@
   "author": "NdYAG <daiximing199078@gmail.com> (http://daix.me)",
   "license": "MIT",
   "dependencies": {
-    "extract-text-webpack-plugin": "^0.8.2",
+    "extract-text-webpack-plugin": "^2.0.0",
     "scribe": "0.0.9",
     "scribe-editor": "^2.0.0",
     "scribe-plugin-link-prompt-command": "^0.3.0",
